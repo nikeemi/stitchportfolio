@@ -1,8 +1,13 @@
-<!DOCTYPE html><html lang="en" class="dark">
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nikee Ibarrientos | Full Stack Web Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nikee Ibarrientos">
@@ -11,8 +16,9 @@
 <meta property="og:description" content="Website Developer">
 
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">try{
+
+
+<script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
@@ -101,246 +107,282 @@
         },
       },
     }
-  }catch(_e){}</script>
-
+  </script>
+<style>
+    body {
+      background-color: #131314;
+      color: #e5e2e2;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .bento-card {
+      background: #161B22;
+      border: 1px solid #1E293B;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .bento-card:hover {
+      border-color: #2DD4BF;
+    }
+    .tech-chip {
+      border: 1px solid #1E293B;
+      padding: 4px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #131314;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2DD4BF;
+    }
+  </style>
 </head>
-
 <body class="antialiased">
-
-  <!-- Top Navigation Shell -->
-  <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-grid-margin py-4 max-w-screen-2xl mx-auto bg-background/80 backdrop-blur-md border-b border-border-subtle md:border-none">
-    <div class="font-headline-lg text-headline-lg font-bold text-tertiary-fixed-dim">
-      N/&gt;
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-grid-margin py-4 max-w-screen-2xl mx-auto bg-background/80 backdrop-blur-md border-b border-border-subtle md:border-none">
+<div class="font-headline-lg text-headline-lg font-bold text-tertiary-fixed-dim">
+      NikeeMI&gt;
     </div>
-    <nav class="hidden md:flex items-center gap-8">
-      <a href="#home" class="text-tertiary-fixed-dim font-bold font-label-caps text-label-caps hover:text-tertiary transition-colors">Home</a>
-      <a href="#projects" class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps">Projects</a>
-      <a href="#stack" class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps">Stack</a>
-      <a href="#contact" class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps">Contact</a>
-    </nav>
-    <div class="md:hidden"><button aria-label="Open Menu" class="flex items-center justify-center w-11 h-11"><span class="material-symbols-outlined text-primary">menu</span></button></div>
-  </header>
-
-  <main class="pt-24 pb-20 px-4 md:px-grid-margin max-w-7xl mx-auto">
-    
-    <!-- Hero Section -->
-    <section id="home" class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter mb-16">
-      <div class="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
-        <h1 class="font-display-lg text-display-lg mb-2 text-on-background">Nikee Ibarrientos</h1>
-        <h2 class="font-headline-lg text-headline-lg text-tertiary-fixed-dim mb-6">Full Stack Web Developer</h2>
-        <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mb-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-tertiary-fixed-dim font-bold font-label-caps text-label-caps hover:text-tertiary transition-colors" href="#home">Home</a>
+<a class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps" href="#projects">Projects</a>
+<a class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps" href="#stack">Stack</a>
+<a class="text-secondary hover:text-tertiary-fixed-dim transition-colors font-label-caps text-label-caps" href="#contact">Contact</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</header>
+<main class="pt-24 pb-20 px-4 md:px-grid-margin max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter mb-16" id="home">
+<div class="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg mb-2 text-on-background">Nikee Ibarrientos</h1>
+<h2 class="font-headline-lg text-headline-lg text-tertiary-fixed-dim mb-6">Full Stack Web Developer</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mb-8">
           An aspiring developer driven by deep curiosity for technology and a relentless willingness to learn. Every line of code is an opportunity to solve a new problem, and every challenge is a step toward growth.
         </p>
-        <div class="flex gap-4">
-        <button class="bg-code-teal text-primary-container px-6 py-3 rounded font-label-caps text-label-caps font-bold hover:brightness-110 transition-all flex items-center gap-2">
-        <a href="./Nikee Ibarrientos_resume.pdf">
-        <span class="material-symbols-outlined text-[18px]">description</span>
+<div class="flex gap-4">
+<button class="bg-code-teal text-primary-container px-6 py-3 rounded font-label-caps text-label-caps font-bold hover:brightness-110 transition-all flex items-center gap-2">
+  <a href="./Nikee Ibarrientos_resume.pdf">
+<span class="material-symbols-outlined text-[18px]">description</span>
             VIEW RESUME</a>
-        </button>
-
-          <button class="border border-performance-indigo text-performance-indigo px-6 py-3 rounded font-label-caps text-label-caps font-bold hover:bg-performance-indigo/10 transition-all flex items-center gap-2 min-h-[44px]">
-            <span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</button>
+<button class="border border-performance-indigo text-performance-indigo px-6 py-3 rounded font-label-caps text-label-caps font-bold hover:bg-performance-indigo/10 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
             GET IN TOUCH
           </button>
-        </div>
-      </div>
-      <div class="md:col-span-4 order-1 md:order-2 flex justify-center items-center">
-        <div class="relative group">
-          <div class="absolute inset-0 bg-code-teal/20 blur-2xl rounded-full group-hover:bg-code-teal/30 transition-all"></div>
-          <img class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-2 border-border-subtle p-2 filter grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLvYFH0IglI7wPjJWYNSymbTRKNj0OIeuuNsGSC8tXqm0dzOxpjgt0Xd7WsSaz-4duAzcPE8MHnMN22-wddQwFEwr50pCkEd2n0N7ERWHUcaxPyC8e2iePiJZj0yrQe6lwFaR_b2-rQ-nGIWaxqUABez68R9WGggTyQ2R_NfWgjicSCD-u_2mD9S2FL_l0YzJG2ayifKh3Y11nb3sp89lNYKP1RhDanHi2ddhjxL7i8RvfsnFchEReXYEuo" width="320" height="320" loading="lazy" alt="Nikee Ibarrientos Profile Picture">
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Grid (Bento Style) -->
-    <section id="projects" class="mb-24">
-      <div class="flex items-center gap-4 mb-8">
-        <h3 class="font-headline-lg text-headline-lg text-on-background">Featured Projects</h3>
-        <div class="h-[1px] flex-grow bg-border-subtle"></div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
-        <!-- Project 1: Large Feature -->
-        <div class="md:col-span-8 bento-card p-module-padding rounded-xl overflow-hidden flex flex-col">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLuPqKCUsEDPsTIwY6FlxeGlTvBS9Uug3sBE3j7vY8HXTq05d50Jt_xVcopEqsO2WKK8CmRFWnYpdzss0fPQfRISsjIEnMWROZQiC-Y9Ea3VjYnrGNH1BWMJk-PL4dpuj7xJWelXvXkJ4wC6useQutxtLp1Vrbk85X0disHwk9MnwKJwkkl6MzL30U47GE51ikzgZg4LNDjqxnWCOEnqdEdexiKamAe1Uhxn14pIbgxNJ-oCHlQVe153oQ" class="w-full h-64 object-cover rounded-lg mb-6 border border-border-subtle filter brightness-90 hover:brightness-100 transition-all" data-alt="High-resolution visual representation of an e-commerce API infrastructure showing data flow between order processing and inventory systems. The aesthetic is clean and professional with a deep space background and vibrant teal accents reflecting a modern web development environment. The lighting is focused and technical, emphasizing precision and architecture." loading="lazy">
-          <div class="mt-auto">
-            <div class="flex justify-between items-start mb-2">
-              <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">E-commerce API Documentation</h4>
-              <span class="material-symbols-outlined text-tertiary-fixed-dim" aria-label="Project Type: Terminal/API">terminal</span>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+</div>
+</div>
+<div class="md:col-span-4 order-1 md:order-2 flex justify-center items-center">
+<div class="relative group">
+<div class="absolute inset-0 bg-code-teal/20 blur-2xl rounded-full group-hover:bg-code-teal/30 transition-all"></div>
+<img class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-2 border-border-subtle p-2 filter grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLvYFH0IglI7wPjJWYNSymbTRKNj0OIeuuNsGSC8tXqm0dzOxpjgt0Xd7WsSaz-4duAzcPE8MHnMN22-wddQwFEwr50pCkEd2n0N7ERWHUcaxPyC8e2iePiJZj0yrQe6lwFaR_b2-rQ-nGIWaxqUABez68R9WGggTyQ2R_NfWgjicSCD-u_2mD9S2FL_l0YzJG2ayifKh3Y11nb3sp89lNYKP1RhDanHi2ddhjxL7i8RvfsnFchEReXYEuo"/>
+</div>
+</div>
+</section>
+<!-- Projects Grid (Bento Style) -->
+<section class="mb-24" id="projects">
+<div class="flex items-center gap-4 mb-8">
+<h3 class="font-headline-lg text-headline-lg text-on-background">Featured Projects</h3>
+<div class="h-[1px] flex-grow bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
+<!-- Project 1: Large Feature -->
+<div class="md:col-span-8 bento-card p-module-padding rounded-xl overflow-hidden flex flex-col">
+<img class="w-full h-64 object-cover rounded-lg mb-6 border border-border-subtle filter brightness-90 hover:brightness-100 transition-all" data-alt="High-resolution visual representation of an e-commerce API infrastructure showing data flow between order processing and inventory systems. The aesthetic is clean and professional with a deep space background and vibrant teal accents reflecting a modern web development environment. The lighting is focused and technical, emphasizing precision and architecture." src="https://lh3.googleusercontent.com/aida/AP1WRLuPqKCUsEDPsTIwY6FlxeGlTvBS9Uug3sBE3j7vY8HXTq05d50Jt_xVcopEqsO2WKK8CmRFWnYpdzss0fPQfRISsjIEnMWROZQiC-Y9Ea3VjYnrGNH1BWMJk-PL4dpuj7xJWelXvXkJ4wC6useQutxtLp1Vrbk85X0disHwk9MnwKJwkkl6MzL30U47GE51ikzgZg4LNDjqxnWCOEnqdEdexiKamAe1Uhxn14pIbgxNJ-oCHlQVe153oQ"/>
+<div class="mt-auto">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">E-commerce API Documentation</h4>
+<span class="material-symbols-outlined text-tertiary-fixed-dim">terminal</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
               Dynamic E-Commerce Workflow Management. Features dynamic routes for order processing, real-time inventory, and secure authentication.
             </p>
-            <div class="flex gap-2 flex-wrap">
-              <span class="tech-chip">NODE.JS</span>
-              <span class="tech-chip">MONGODB</span>
-              <span class="tech-chip">POSTMAN</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Vertical Small -->
-        <div class="md:col-span-4 bento-card p-module-padding rounded-xl flex flex-col">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLvDRLZYrtT0RbL9OhX0LblIJpYa0T1v7SpcXzSxQdvsiVgTb-uGoM0PUu8itYBmAJnFXOGFsaGhmEaNJv4DdR1OdL-jiltlEy9ywB1Naf4kmiZwB01iX7IjObUoUHuBUDgKzzYZGbvnHAVD_IRWo3BHtrAFutc1KfJxGOnBCDAP7g1yk_yJ5zE4jyKvVuVBuAI5uoXaKGx6TtmGYtyj3IH8HXFqCE2PG64iJwk8G91zOLWfB5ucs3oWAg" class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="A sophisticated interface for an online course booking platform featuring clean typography and a muted color scheme. The visual style is focused on usability and technical efficiency within a dark mode UI. Deep blues and grays are accented with sharp teal borders and icons." loading="lazy">
-          <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Course API</h4>
-          <p class="text-sm text-on-surface-variant mb-4">RESTful API managing course enrollments, auth, and student details.</p>
-          <div class="mt-auto flex gap-2">
-            <span class="tech-chip">EXPRESS</span>
-            <span class="tech-chip">JWT</span>
-          </div>
-        </div>
-
-        <!-- Project 3: Wide -->
-        <div class="md:col-span-4 bento-card p-module-padding rounded-xl">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLu56xiGsKhNqZNS8sBXK3ymwi0-tDn56IrNF5a3Y9dfBuynoTOQyLqr18i-9gCM6E1l34wFgQn7ePYrusGGHPXYq9DmC0Vzew5sNo8af8MLxkWeezksLHuFa7Te8s67YxC3G5oRkfNdeUU4-Jb_TvyDnTOJ3XSqdV0wERpWxwa5kzJIevph21V1BHhFMDJYI7Q9XqXmxVDmZ6_bCwOUX1ioS1vAjcl4nf3GhxkUQz88WjIsfURYqouIFcM" class="w-full h-40 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="Screenshot of a course enrollment dashboard with user profile management and course lists. The design follows a strict bento grid philosophy with monochromatic iconography and sharp, high-contrast text. Lighting is subtle and ambient within a dark interface." loading="lazy">
-          <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Course Booking App</h4>
-          <p class="text-sm text-on-surface-variant">Full MERN-stack system for registration and enrollment.</p>
-        </div>
-
-        <div class="md:col-span-8 bento-card p-module-padding rounded-xl flex flex-col md:flex-row gap-6">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLsQRu26LhWywNJOm6KKjn8e06Ko0bFQRcQWVsaN79sZ4AjRQpajrF4TN9pi0gGXBjI9LH_eGVkdrot95Bch1SNdnUwoNxCJGj6ypYPb-bz3Ic8qSnlnCXnLONIQH9RjizudItwJHITygbOcvCpS45squeZQQcp5lq6BLJMKfXFWoWjsg8IJNx_dqp-oKDqjE0J7UwdoYtbq0yDxev9QIZmvvSn_S8cfkqqeVnfneb-Im-Eyl6KcwQI8414" class="w-full md:w-1/2 h-48 object-cover rounded-lg border border-border-subtle" data-alt="An expansive e-commerce marketplace platform displayed on multiple device frames with real-time analytics dashboards. The UI uses a deep space aesthetic with code-teal accents and minimalistic layout. Every visual element emphasizes performance and professional engineering quality." loading="lazy">
-          <div class="flex flex-col justify-center">
-            <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">E-commerce App</h4>
-            <p class="text-sm text-on-surface-variant mb-4">Platform with dynamic catalog, cart updates, and admin dashboard.</p>
-            <div class="flex gap-2">
-              <span class="tech-chip">REACT</span>
-              <span class="tech-chip">REDUX</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Airline Prototype -->
-        <div class="md:col-span-6 bento-card p-module-padding rounded-xl">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLtPQn5JRO5Yhs7134nLyX-YsOMnlpCaX4blb9h792Kc6jKHK-rf7poHRKiHYQjM1HyHTY0wMCSWNuPW7CkcGZQHCMUM6ejPcaNjIfIiXe4Avc06kCKy3_llQxQm09oMv8Kj_ye1nwtzSpYWriaxjboJFQKJzPkTghv1Wh7k66_peQ7jZL8pUM0ZDKhdi5b8uKMRbkWlaSeqIJp3Wc_vrojoXYnL-qZvX97__lt0LA3LsvmT6qtl-wcWlJE" class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="A futuristic conceptual design for an airline booking system featuring flight search results and seat selection maps. The lighting is cinematic with subtle glow effects on interactive elements. The color palette centers around deep navies and glowing indigos for a professional aerospace feel." loading="lazy">
-          <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Airline System Prototype</h4>
-          <p class="text-sm text-on-surface-variant">Conceptual flight search UI focused on workflow efficiency.</p>
-        </div>
-
-        <!-- Project 6: Flight Search -->
-        <div class="md:col-span-6 bento-card p-module-padding rounded-xl">
-          <img src="https://lh3.googleusercontent.com/aida/AP1WRLuqTzgw44KYmy0pifgJ0vVPBPqUN2dSQu-tQmsGNmeJywpgUKsKR4sla1MMJySv8gzOhZvsm8Y-TV0Aud-fRz4r8CCtILrFgG9-OzGJi-eCSy8fzI53NfzFAdN9OV9VcBaK3nj18zgLIuvVVpJHnHAUr1-uM0Ib7-MVnhrJ6HbbpGQIoIvT_gzk80UT2iwCESZD6-kUdhkXSIhUhvTV5XIk4dRLlVDPjOpRfJCDump5LibAAC_Zu7DtEQU" class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="Digital mockup of a minimalist flight booking application with clean navigation and streamlined checkout process. The style is strictly minimal, using ghostly outlines and tonal layer elevation to create structure. Sophisticated neutral tones dominate the background." loading="lazy">
-          <h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Flight Search Side Project</h4>
-          <p class="text-sm text-on-surface-variant">Side project exploring intuitive UI for travel logistics.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section id="stack" class="mb-24">
-      <div class="flex items-center gap-4 mb-12">
-        <h3 class="font-headline-lg text-headline-lg text-on-background">Core Tools</h3>
-        <div class="h-[1px] flex-grow bg-border-subtle"></div>
-      </div>
-      
-      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-grid-gutter text-center">
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">html</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">HTML5</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">css</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">CSS3</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">javascript</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">JAVASCRIPT</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">grid_view</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">BOOTSTRAP</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">deployed_code</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">REACT</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">settings_ethernet</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">NODE.JS</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 group">
-          <div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
-            <span class="material-symbols-outlined text-4xl">database</span>
-          </div>
-          <span class="font-code-sm text-code-sm text-secondary">MONGODB</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="mb-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
-          <h3 class="font-headline-lg text-headline-lg text-on-background mb-4">Let's Connect</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+<div class="flex gap-2 flex-wrap">
+<span class="tech-chip">NODE.JS</span>
+<span class="tech-chip">MONGODB</span>
+<span class="tech-chip">POSTMAN</span>
+</div>
+</div>
+</div>
+<!-- Project 2: Vertical Small -->
+<div class="md:col-span-4 bento-card p-module-padding rounded-xl flex flex-col">
+<img class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="A sophisticated interface for an online course booking platform featuring clean typography and a muted color scheme. The visual style is focused on usability and technical efficiency within a dark mode UI. Deep blues and grays are accented with sharp teal borders and icons." src="https://lh3.googleusercontent.com/aida/AP1WRLvDRLZYrtT0RbL9OhX0LblIJpYa0T1v7SpcXzSxQdvsiVgTb-uGoM0PUu8itYBmAJnFXOGFsaGhmEaNJv4DdR1OdL-jiltlEy9ywB1Naf4kmiZwB01iX7IjObUoUHuBUDgKzzYZGbvnHAVD_IRWo3BHtrAFutc1KfJxGOnBCDAP7g1yk_yJ5zE4jyKvVuVBuAI5uoXaKGx6TtmGYtyj3IH8HXFqCE2PG64iJwk8G91zOLWfB5ucs3oWAg"/>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Course API</h4>
+<p class="text-sm text-on-surface-variant mb-4">RESTful API managing course enrollments, auth, and student details.</p>
+<div class="mt-auto flex gap-2">
+<span class="tech-chip">EXPRESS</span>
+<span class="tech-chip">JWT</span>
+</div>
+</div>
+<!-- Project 3: Wide -->
+<div class="md:col-span-4 bento-card p-module-padding rounded-xl">
+<img class="w-full h-40 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="Screenshot of a course enrollment dashboard with user profile management and course lists. The design follows a strict bento grid philosophy with monochromatic iconography and sharp, high-contrast text. Lighting is subtle and ambient within a dark interface." src="https://lh3.googleusercontent.com/aida/AP1WRLu56xiGsKhNqZNS8sBXK3ymwi0-tDn56IrNF5a3Y9dfBuynoTOQyLqr18i-9gCM6E1l34wFgQn7ePYrusGGHPXYq9DmC0Vzew5sNo8af8MLxkWeezksLHuFa7Te8s67YxC3G5oRkfNdeUU4-Jb_TvyDnTOJ3XSqdV0wERpWxwa5kzJIevph21V1BHhFMDJYI7Q9XqXmxVDmZ6_bCwOUX1ioS1vAjcl4nf3GhxkUQz88WjIsfURYqouIFcM"/>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Course Booking App</h4>
+<p class="text-sm text-on-surface-variant">Full MERN-stack system for registration and enrollment.</p>
+</div>
+<div class="md:col-span-8 bento-card p-module-padding rounded-xl flex flex-col md:flex-row gap-6">
+<img class="w-full md:w-1/2 h-48 object-cover rounded-lg border border-border-subtle" data-alt="An expansive e-commerce marketplace platform displayed on multiple device frames with real-time analytics dashboards. The UI uses a deep space aesthetic with code-teal accents and minimalistic layout. Every visual element emphasizes performance and professional engineering quality." src="https://lh3.googleusercontent.com/aida/AP1WRLsQRu26LhWywNJOm6KKjn8e06Ko0bFQRcQWVsaN79sZ4AjRQpajrF4TN9pi0gGXBjI9LH_eGVkdrot95Bch1SNdnUwoNxCJGj6ypYPb-bz3Ic8qSnlnCXnLONIQH9RjizudItwJHITygbOcvCpS45squeZQQcp5lq6BLJMKfXFWoWjsg8IJNx_dqp-oKDqjE0J7UwdoYtbq0yDxev9QIZmvvSn_S8cfkqqeVnfneb-Im-Eyl6KcwQI8414"/>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">E-commerce App</h4>
+<p class="text-sm text-on-surface-variant mb-4">Platform with dynamic catalog, cart updates, and admin dashboard.</p>
+<div class="flex gap-2">
+<span class="tech-chip">REACT</span>
+<span class="tech-chip">REDUX</span>
+</div>
+</div>
+</div>
+<!-- Project 5: Airline Prototype -->
+<div class="md:col-span-6 bento-card p-module-padding rounded-xl">
+<img class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="A futuristic conceptual design for an airline booking system featuring flight search results and seat selection maps. The lighting is cinematic with subtle glow effects on interactive elements. The color palette centers around deep navies and glowing indigos for a professional aerospace feel." src="https://lh3.googleusercontent.com/aida/AP1WRLtPQn5JRO5Yhs7134nLyX-YsOMnlpCaX4blb9h792Kc6jKHK-rf7poHRKiHYQjM1HyHTY0wMCSWNuPW7CkcGZQHCMUM6ejPcaNjIfIiXe4Avc06kCKy3_llQxQm09oMv8Kj_ye1nwtzSpYWriaxjboJFQKJzPkTghv1Wh7k66_peQ7jZL8pUM0ZDKhdi5b8uKMRbkWlaSeqIJp3Wc_vrojoXYnL-qZvX97__lt0LA3LsvmT6qtl-wcWlJE"/>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Airline System Prototype</h4>
+<p class="text-sm text-on-surface-variant">Conceptual flight search UI focused on workflow efficiency.</p>
+</div>
+<!-- Project 6: Flight Search -->
+<div class="md:col-span-6 bento-card p-module-padding rounded-xl">
+<img class="w-full h-48 object-cover rounded-lg mb-4 border border-border-subtle" data-alt="Digital mockup of a minimalist flight booking application with clean navigation and streamlined checkout process. The style is strictly minimal, using ghostly outlines and tonal layer elevation to create structure. Sophisticated neutral tones dominate the background." src="https://lh3.googleusercontent.com/aida/AP1WRLuqTzgw44KYmy0pifgJ0vVPBPqUN2dSQu-tQmsGNmeJywpgUKsKR4sla1MMJySv8gzOhZvsm8Y-TV0Aud-fRz4r8CCtILrFgG9-OzGJi-eCSy8fzI53NfzFAdN9OV9VcBaK3nj18zgLIuvVVpJHnHAUr1-uM0Ib7-MVnhrJ6HbbpGQIoIvT_gzk80UT2iwCESZD6-kUdhkXSIhUhvTV5XIk4dRLlVDPjOpRfJCDump5LibAAC_Zu7DtEQU"/>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Flight Search Side Project</h4>
+<p class="text-sm text-on-surface-variant">Side project exploring intuitive UI for travel logistics.</p>
+</div>
+</div>
+</section>
+<!-- Tech Stack Section -->
+<section class="mb-24" id="stack">
+<div class="flex items-center gap-4 mb-12">
+<h3 class="font-headline-lg text-headline-lg text-on-background">Core Tools</h3>
+<div class="h-[1px] flex-grow bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-grid-gutter text-center">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">html</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">HTML5</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">css</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">CSS3</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">javascript</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">JAVASCRIPT</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">grid_view</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">BOOTSTRAP</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">deployed_code</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">REACT</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">settings_ethernet</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">NODE.JS</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 bento-card rounded-lg flex items-center justify-center group-hover:border-performance-indigo transition-all">
+<span class="material-symbols-outlined text-4xl">database</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">MONGODB</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="mb-12" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-background mb-4">Let's Connect</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
             Interested in collaboration or have a project in mind? I'm always looking for opportunities to grow and apply my skills.
           </p>
-          <div class="space-y-4">
-            <div class="flex items-center gap-4 text-on-surface">
-              <span class="material-symbols-outlined text-tertiary-fixed-dim">mail</span>
-              <span class="">nikee@example.com</span>
-            </div>
-            <div class="flex items-center gap-4 text-on-surface">
-              <span class="material-symbols-outlined text-tertiary-fixed-dim">location_on</span>
-              <span class="">Metro Manila, Philippines</span>
-            </div>
-          </div>
-        </div>
-        <div class="bento-card p-module-padding rounded-xl">
-          <form class="space-y-6">
-            <div>
-              <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">NAME</label>
-              <input type="text" placeholder="Your Full Name" class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all min-h-[44px]">
-            </div>
-            <div>
-              <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">EMAIL ADDRESS</label>
-              <input type="email" placeholder="example@email.com" class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all min-h-[44px]">
-            </div>
-            <div>
-              <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">MESSAGE</label>
-              <textarea rows="4" placeholder="How can I help you?" class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all min-h-[44px]"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-tertiary-fixed-dim text-on-tertiary font-bold py-3 rounded-lg hover:opacity-90 transition-all font-label-caps text-label-caps">
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">mail</span>
+<span>nikee@example.com</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">location_on</span>
+<span>Metro Manila, Philippines</span>
+</div>
+</div>
+</div>
+<div class="bento-card p-module-padding rounded-xl">
+<form class="space-y-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">NAME</label>
+<input class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all" placeholder="Your Full Name" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">EMAIL ADDRESS</label>
+<input class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all" placeholder="example@email.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">MESSAGE</label>
+<textarea class="w-full bg-surface-muted border-border-subtle focus:border-performance-indigo focus:ring-0 rounded-lg text-on-surface transition-all" placeholder="How can I help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-tertiary-fixed-dim text-on-tertiary font-bold py-3 rounded-lg hover:opacity-90 transition-all font-label-caps text-label-caps" type="submit">
               SUBMIT MESSAGE
             </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer Shell -->
-  <footer class="w-full py-grid-margin px-grid-margin flex flex-col md:flex-row justify-between items-center gap-stack-gap border-t border-border-subtle bg-surface-container-lowest">
-    <div class="text-tertiary-fixed-dim font-bold font-headline-lg">N/&gt;</div>
-    <div class="flex gap-8 font-body-md text-body-md text-secondary">
-      <a href="#" class="hover:text-tertiary transition-colors">GitHub</a>
-      <a href="#" class="hover:text-tertiary transition-colors">LinkedIn</a>
-    </div>
-    <div class="flex items-center gap-4">
-      <span class="font-body-md text-body-md text-on-surface-variant">© 2024 Built with Precision</span>
-      <div class="flex items-center gap-2 px-3 py-1 bg-surface-muted border border-performance-indigo rounded-full">
-        <span class="text-[10px] font-bold text-performance-indigo uppercase tracking-wider">Performance</span>
-        <span class="text-sm font-bold text-on-surface">100</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Bottom Nav Shell -->
-  <div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 md:hidden px-4 bg-surface-container border-t border-border-subtle"><a class="flex flex-col items-center justify-center text-tertiary-fixed-dim transition-transform active:scale-90 w-11 h-11" href="#home" aria-label="Home"><span class="material-symbols-outlined" data-weight="fill">home</span><span class="text-[10px] font-bold mt-1">Home</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90 w-11 h-11" href="#projects" aria-label="Projects"><span class="material-symbols-outlined">code</span><span class="text-[10px] font-bold mt-1">Projects</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90 w-11 h-11" href="#stack" aria-label="Stack"><span class="material-symbols-outlined">database</span><span class="text-[10px] font-bold mt-1">Stack</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90 w-11 h-11" href="#contact" aria-label="Contact"><span class="material-symbols-outlined">mail</span><span class="text-[10px] font-bold mt-1">Contact</span></a></div>
-
-  <script>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-grid-margin px-grid-margin flex flex-col md:flex-row justify-between items-center gap-stack-gap border-t border-border-subtle bg-surface-container-lowest">
+<div class="text-tertiary-fixed-dim font-bold font-headline-lg">N/&gt;</div>
+<div class="flex gap-8 font-body-md text-body-md text-secondary">
+<a class="hover:text-tertiary transition-colors" href="#">GitHub</a>
+<a class="hover:text-tertiary transition-colors" href="#">LinkedIn</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant">© 2024 Built with Precision</span>
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-muted border border-performance-indigo rounded-full">
+<span class="text-[10px] font-bold text-performance-indigo uppercase tracking-wider">Performance</span>
+<span class="text-sm font-bold text-on-surface">100</span>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Nav Shell -->
+<div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 md:hidden px-4 bg-surface-container border-t border-border-subtle">
+<a class="flex flex-col items-center justify-center text-tertiary-fixed-dim transition-transform active:scale-90" href="#home">
+<span class="material-symbols-outlined" data-weight="fill">home</span>
+<span class="text-[10px] font-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90" href="#projects">
+<span class="material-symbols-outlined">code</span>
+<span class="text-[10px] font-bold mt-1">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90" href="#stack">
+<span class="material-symbols-outlined">database</span>
+<span class="text-[10px] font-bold mt-1">Stack</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform active:scale-90" href="#contact">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] font-bold mt-1">Contact</span>
+</a>
+</div>
+<script>
     // Simple intersection observer for reveal animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -370,4 +412,18 @@
         }
       });
 
-      // Simple implementation - could be expanded to match</script></body></html>
+      // Simple implementation - could be expanded to match the JSON logic strictly
+      const mobileNavItems = document.querySelectorAll('.md\\:hidden.fixed.bottom-0 a');
+      mobileNavItems.forEach(item => {
+        const href = item.getAttribute('href').substring(1);
+        if(href === current) {
+          item.classList.add('text-tertiary-fixed-dim');
+          item.classList.remove('text-on-surface-variant');
+        } else {
+          item.classList.remove('text-tertiary-fixed-dim');
+          item.classList.add('text-on-surface-variant');
+        }
+      });
+    });
+  </script>
+</body></html>
